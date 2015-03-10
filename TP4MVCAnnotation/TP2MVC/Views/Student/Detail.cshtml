@@ -1,4 +1,4 @@
-﻿@model TP2MVC.Models.Student
+﻿@model TP2MVC.ViewModels.DetailViewModel
 
 @{
     ViewBag.Title = "Detail";
@@ -13,48 +13,50 @@
 <h2>Detail</h2>
 
 <div>
+    <h1>@Model.Student.Name</h1>
+    <h1>@Model.School</h1>
     <h4>Student</h4>
-    <hr />
+    <hr/>
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Name)
+            @Html.DisplayNameFor(model => model.Student.Name)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Name)
+            @Html.DisplayFor(model => model.Student.Name)
         </dd>
 
         <dt>
-                        @Html.DisplayNameFor(model => model.Email)
-                        <a href="~/Views/Student/Detail.cshtml">~/Views/Student/Detail.cshtml</a>
+            @Html.DisplayNameFor(model => model.Student.Email)
+            <a href="~/Views/Student/Detail.cshtml">~/Views/Student/Detail.cshtml</a>
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Email)
+            @Html.DisplayFor(model => model.Student.Email)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Class)
+            @Html.DisplayNameFor(model => model.Student.Class)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Class)
+            @Html.DisplayFor(model => model.Student.Class)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.JoinDate)
+            @Html.DisplayNameFor(model => model.Student.JoinDate)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.JoinDate)
+            @Html.DisplayFor(model => model.Student.JoinDate)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.HasPaid)
+            @Html.DisplayNameFor(model => model.Student.HasPaid)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.HasPaid)
+            @Html.DisplayFor(model => model.Student.HasPaid)
         </dd>
 
     </dl>

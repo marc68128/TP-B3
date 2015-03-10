@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using TP2MVC.Models;
+using TP2MVC.ViewModels;
 
 namespace TP2MVC.Controllers
 {
@@ -11,7 +12,7 @@ namespace TP2MVC.Controllers
     {
         // GET: Student
         public ActionResult Detail()
-        {
+        { 
             var student = new Student
             {
                 Name = "Toto", 
@@ -21,7 +22,13 @@ namespace TP2MVC.Controllers
                 HasPaid = true
             };
 
-            return View(student);
+           
+
+            return View(new DetailViewModel
+            {
+                Student = student,
+                School = "Supinfo"
+            });
         }
     }
 }
