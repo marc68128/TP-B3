@@ -1,0 +1,65 @@
+﻿@model TP7SchoolManagement.ViewModels.DashboardViewodel
+
+@{
+    ViewBag.Title = "title";
+}
+
+<h2>Dashboard</h2>
+
+<form action="" method="GET" id="SchoolForm">
+    <select name="SchoolName" onchange=" $('#SchoolForm').submit(); ">
+        <option>All</option>
+        @foreach (var school in Model.Schools)
+        {
+            <option @if (Model.SelectedSchoolName == school.Name)
+                    {
+                        @Html.Raw( "selected")
+                        @*@:selected*@
+                    }>@school.Name</option>
+        }
+    </select>
+</form>
+
+<br />
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Students.First().School.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Students.First().Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Students.First().JoinDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Students.First().HasPaid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Students.First().Class)
+        </th>
+    </tr>
+
+    @foreach (var item in Model.Students)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.School.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JoinDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HasPaid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Class)
+            </td>
+        </tr>
+    }
+
+</table>
+
