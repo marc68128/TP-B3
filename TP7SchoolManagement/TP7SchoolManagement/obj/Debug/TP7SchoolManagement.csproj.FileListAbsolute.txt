@@ -28,3 +28,9 @@ D:\Projects\Supinfo B3\TP7SchoolManagement\TP7SchoolManagement\bin\Newtonsoft.Js
 D:\Projects\Supinfo B3\TP7SchoolManagement\TP7SchoolManagement\obj\Debug\TP7SchoolManagement.csprojResolveAssemblyReference.cache
 D:\Projects\Supinfo B3\TP7SchoolManagement\TP7SchoolManagement\obj\Debug\TP7SchoolManagement.dll
 D:\Projects\Supinfo B3\TP7SchoolManagement\TP7SchoolManagement\obj\Debug\TP7SchoolManagement.pdb
+D:\Projects\Supinfo B3\TP7SchoolManagement\TP7SchoolManagement\bin\System.Net.Http.Formatting.dll
+D:\Projects\Supinfo B3\TP7SchoolManagement\TP7SchoolManagement\bin\System.Web.Http.dll
+D:\Projects\Supinfo B3\TP7SchoolManagement\TP7SchoolManagement\bin\System.Web.Http.WebHost.dll
+D:\Projects\Supinfo B3\TP7SchoolManagement\TP7SchoolManagement\bin\System.Net.Http.Formatting.xml
+D:\Projects\Supinfo B3\TP7SchoolManagement\TP7SchoolManagement\bin\System.Web.Http.xml
+D:\Projects\Supinfo B3\TP7SchoolManagement\TP7SchoolManagement\bin\System.Web.Http.WebHost.xml

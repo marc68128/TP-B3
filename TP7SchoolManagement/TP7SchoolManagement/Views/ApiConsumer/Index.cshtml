@@ -1,0 +1,28 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "title";
+}
+
+<h2>API</h2>
+
+<button onclick="GetAllStudents();">Get all students</button>
+
+<script type="text/javascript">
+    
+    function GetAllStudents() {
+        jQuery.support.cors = true;
+        $.ajax({
+            url: 'http://localhost:42607/api/Students',
+            type: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                alert(data);
+            },
+            error: function (x, y, z) {
+                alert(x + '\n' + y + '\n' + z);
+            }
+        });
+    }
+
+</script>
